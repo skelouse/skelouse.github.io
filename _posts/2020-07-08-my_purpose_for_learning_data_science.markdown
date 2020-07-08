@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My Purpose for Learning Data Science."
-date:       2020-07-08 13:39:31 +0000
+date:       2020-07-08 09:39:32 -0400
 permalink:  my_purpose_for_learning_data_science
 ---
 
