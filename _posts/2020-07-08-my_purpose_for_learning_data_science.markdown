@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "My Purpose for Learning Data Science."
+title:      "Grocery Man to Data Scientist."
 date:       2020-07-08 09:39:32 -0400
 permalink:  my_purpose_for_learning_data_science
 ---
