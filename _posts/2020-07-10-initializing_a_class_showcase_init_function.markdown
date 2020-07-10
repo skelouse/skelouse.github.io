@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Initializing a Class/ Showcase __init__ Function."
-date:       2020-07-10 20:48:18 +0000
+date:       2020-07-10 16:48:19 -0400
 permalink:  initializing_a_class_showcase_init_function
 ---
 
@@ -16,7 +16,7 @@ permalink:  initializing_a_class_showcase_init_function
     I could also do something like `c =B(name='xyz')`  to set the name of it. </p>
 
 
-
+# Code:
 <pre><code>
 class Dog():
     def __init__(self):
@@ -42,7 +42,7 @@ print("\nName of instance b is", b.name)  # printing the instances name
 print("\n It can also be initialized and name printed by simply calling like so -------  ", B("new").name)
 </code></pre>
 
-The output of such being
+# Output:
 
 <pre><code>
 Initializing <__main__.A object at 0x7f30a0356310>
@@ -53,4 +53,17 @@ Initializing <__main__.B object at 0x7f30a0356410>
 Name of instance b is Haron
 Initializing <__main__.B object at 0x7f30a0356450>
  It can also be initialized by simply calling like so -------   new
-</code><pre>
+</code></pre>
+
+# Use Case:
+
+<p> This shows in the matplotlib module where you instantiate a figure by calling,  figsize is accepted in the init function of class Figure.
+<pre><code>figure = Figure(figsize=(6, 8))</code></pre>
+
+
+Which per matplotlib documentation, instantiates a Figure.
+
+<pre><code>:mod:`matplotlib.figure`
+        defines the :class:`~matplotlib.figure.Figure` class.
+</code></pre>
+</p>
