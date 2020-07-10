@@ -1,12 +1,12 @@
 ---
 layout: post
-title:      "Initializing a Class/ Showcase __init__ Function."
+title:      "Initializing a Class/ Showcase \__init__ Function."
 date:       2020-07-10 16:48:19 -0400
 permalink:  initializing_a_class_showcase_init_function
 ---
 
 <p>
-    Below I start out by creating a class called Dog with an init function that prints "initializing" self.  When I instantiate it with 'a = Dog()' you can see that it runs the init function, printing ('initializing', self), although it won't be "self" due to it printing the actual object pointer.  After defining the class I print out a, which shows basically <__main__.A object at xyz> </p>
+    Below I start out by creating a class called Dog with an init function that prints "initializing" self.  When I instantiate it with 'a = Dog()' you can see that it runs the init function, printing ('initializing', self), although it won't be "self" due to it printing the actual object pointer.  After defining the class I print out a, which shows basically \__main__.A object at xyz </p>
 
 <p>
     Next you will see the definition of class B with an init function that prints initializing self, and sets the name of itself which is taken as a variable from the init function.  b is set to B('Haron) with given name Haron, and you can see that it gets set to the 'name' variable of the object.  After it is set I can simply print b.name, and it returns "Haron"
