@@ -17,8 +17,7 @@ permalink:  initializing_a_class_showcase_init_function
 
 
 # Code:
-<pre><code>
-class Dog():
+<pre><code>class Dog():
     def __init__(self):
         print("Initializing", self)
         
@@ -44,8 +43,7 @@ print("\n It can also be initialized and name printed by simply calling like so 
 
 # Output:
 
-<pre><code>
-Initializing <__main__.A object at 0x7f30a0356310>
+<pre><code>Initializing <__main__.A object at 0x7f30a0356310>
 <__main__.A object at 0x7f30a0356310>
 
 
@@ -58,8 +56,7 @@ Initializing <__main__.B object at 0x7f30a0356450>
 # Use Case:
 
 <p> This shows in the matplotlib module where you instantiate a figure by calling the below where figsize is accepted in the init function of class Figure.
-<pre><code>
-import matplotlib.pyplot as plt
+<pre><code>import matplotlib.pyplot as plt
 figure = plt.figure(figsize=(6, 8))</code></pre>
 
 
