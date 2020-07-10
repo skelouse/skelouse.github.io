@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Initializing a Class/ Showcase \__init__ Function."
+title:      "Initializing a Class/ Showcase __init__ Function."
 date:       2020-07-10 16:48:19 -0400
 permalink:  initializing_a_class_showcase_init_function
 ---
