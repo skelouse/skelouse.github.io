@@ -58,7 +58,9 @@ Initializing <__main__.B object at 0x7f30a0356450>
 # Use Case:
 
 <p> This shows in the matplotlib module where you instantiate a figure by calling the below where figsize is accepted in the init function of class Figure.
-<pre><code>figure = Figure(figsize=(6, 8))</code></pre>
+<pre><code>
+import matplotlib.pyplot as plt
+figure = plt.figure(figsize=(6, 8))</code></pre>
 
 
 Which per matplotlib documentation, instantiates a Figure.
