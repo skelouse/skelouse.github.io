@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Project placeholder"
-date:       2020-07-31 17:10:07 +0000
+title:      "Scraping Data As a Group"
+date:       2020-07-31 13:10:08 -0400
 permalink:  project_placeholder
 ---
 
