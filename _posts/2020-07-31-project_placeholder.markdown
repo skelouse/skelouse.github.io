@@ -62,7 +62,9 @@ while not done:
     with open('./nums%s.txt'%x, 'w') as f:
         f.write(person_list)
 				
-# In hindsight I could have combined the two above codes with a list of people participating, and have it automatically save to their given name's file rather then changing the names myself.
+# In hindsight I could have combined the two above codes
+with a list of people participating, and have it automatically
+save to their given name's file rather then changing the names myself.
 ```
 
 
