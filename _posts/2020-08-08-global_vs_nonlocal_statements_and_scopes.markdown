@@ -1,10 +1,9 @@
 ---
 layout: post
 title:      "global vs nonlocal statements and scopes"
-date:       2020-08-08 05:21:53 +0000
+date:       2020-08-08 01:21:54 -0400
 permalink:  global_vs_nonlocal_statements_and_scopes
 ---
-
 
 <html>
 <head><meta charset="utf-8" />
