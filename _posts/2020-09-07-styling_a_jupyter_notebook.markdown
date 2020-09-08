@@ -5,7 +5,7 @@ date:       2020-09-07 23:47:07 -0400
 permalink:  styling_a_jupyter_notebook
 ---
 
-Here I will go over multiple methods of using css and html to style and prettify your jupyter notebook like my photo below, or use in any html/css scenario going over:
+Here I will go over multiple methods of using css and html to style and prettify your jupyter notebook like my photo below. For use in any html/css scenario I will be going over:
 - alert boxes
 - editing attributes in VSCode
 - css of headers
