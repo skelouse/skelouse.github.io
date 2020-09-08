@@ -7,16 +7,17 @@ permalink:  styling_a_jupyter_notebook
 
 ## Before:
 
-![](https://i.imgur.com/M5p6h4h.png)
+![](https://i.imgur.com/7Zhjlw3.png)
 
 ## After:
 
 ![](https://i.imgur.com/OGwzciY.png)
 
 
+<br>
 
-<br></br>
 ## Alert Boxes:
+> These are basic html, that you can simply write into a markdown block of a Jupyter Notebook ( Select desired markdown cell ) `ctrl+m` then try pasting some html or markdown code.
 
 <div class="alert alert-info">
   <strong>Let's start with these blue boxes:</strong>
@@ -38,3 +39,5 @@ class="alert alert-info"  for <p class="alert alert-info">blue</p>
 </li>
 </ul>
 </div>
+
+
