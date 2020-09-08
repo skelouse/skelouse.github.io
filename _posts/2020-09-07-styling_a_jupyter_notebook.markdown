@@ -236,7 +236,7 @@ Which would look like:
 </div>
 <div class="alert alert-success" markdown="1">
 
-> This is an alert box
+> This is a blockquote
 > - And a list
 >     - And a nested element with a **bold**
 
