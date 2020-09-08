@@ -31,9 +31,9 @@ Here I will go over multiple methods of using css and html to style and prettify
 > - try pasting the code below.
 
 <div class="alert alert-info">
-  <strong>Let's start with THIS blue boxes:</strong>
+  <strong>Let's start with THIS blue box:</strong>
 <pre><code>&lt;div class=&quot;alert alert-info&quot;&gt;
-  &lt;strong&gt;Let's start with these blue boxes:&lt;/strong&gt;
+  &lt;strong&gt;Let's start with THIS blue box:&lt;/strong&gt;
 &lt;/div&gt;</code></pre>
 <ul>
 <li>
