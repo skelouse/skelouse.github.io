@@ -4,8 +4,7 @@ title:      "Linear Regression Model From a Distance"
 date:       2020-08-27 02:37:33 -0400
 permalink:  linear_regression_model_from_a_distance
 ---
-
-</style><meta charset="utf-8" />
+<meta charset="utf-8" />
 
 <title>blog</title>
 
@@ -13021,8 +13020,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-    </style>
-
+</style>
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
