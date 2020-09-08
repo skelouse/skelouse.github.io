@@ -80,15 +80,15 @@ css_styling()
 ```
 
 <div class="alert alert-info">
-  <strong>Inside of the custom.css file you can have things like:</strong>
+  <strong>Inside of the custom.css file you can customize things like:</strong>
 <ul>
-<li>Custom Headers</li>
+<li>Headers</li>
 <li>Codeblocks</li>
 <li>Bolded text</li>
 <li>*alerts*</li>
 <li>blockquotes</li>
 <li>listelements</li>
-<li> And many more</li>
+<li> And many more...</li>
 </ul> 
 </div>
 <br>
