@@ -1,8 +1,8 @@
 ---
 layout: post
-title:      "Linear Regression Model From a Distance"
+title:      "Styling A Jupyter Notebook"
 date:       2020-08-27 02:37:33 -0400
-permalink:  linear_regression_model_from_a_distance
+permalink:  test
 ---
 <meta charset="utf-8" />
 
