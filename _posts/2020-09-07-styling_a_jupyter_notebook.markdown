@@ -251,6 +251,12 @@ Which would look like:
 # Useful Links:
 
 - <a href="https://github.com/skelouse">My github</a>
-- <a href="http://www.csszengarden.com/">CSS zen garden: For css examples, inspect the page</a>
+- <a href="http://www.csszengarden.com/">CSS zen garden</a>: For css examples, inspect the page
 - <a href="https://lmgtfy.com/?q=css+help">The greatest source of css help on the planet!</a>
 - Inspect this page or elements on any webpage!
+
+<style>
+a {
+  color: rgb(6,69,173);
+}
+</style>
