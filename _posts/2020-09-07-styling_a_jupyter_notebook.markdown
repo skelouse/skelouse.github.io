@@ -5,6 +5,14 @@ date:       2020-09-07 23:47:07 -0400
 permalink:  styling_a_jupyter_notebook
 ---
 
+> Here I will go over multiple methods of using css and html to style and prettify your jupyter notebook like my photo below, or use in any html/css scenario going over:
+> - alert boxes
+> - editing attributes in VSCode
+> - css of headers
+> - css of blockquotes
+> - adding a shadow to an alert box
+> - using markdown in a &lt;div&gt; block
+
 ## Before:
 
 ![](https://i.imgur.com/kdCXHBM.png)
@@ -16,7 +24,7 @@ permalink:  styling_a_jupyter_notebook
 
 <br>
 
-## Alert Boxes:
+# Alert Boxes:
 > These are basic html, that you can simply copy and paste into a markdown block of a Jupyter Notebook
 > - Select desired markdown cell.
 > - `ctrl+m`
@@ -45,7 +53,7 @@ class="alert alert-info"  for <p class="alert alert-info">blue</p>
 
 <br>
 
-## Adding css into a notebook:
+# Adding css into a notebook:
 > css is the different shadows, colors, and titles you see in the After: screenshot above
 
 ```
@@ -86,7 +94,7 @@ css_styling()
 </div>
 <br>
 
-### Custom Headers
+# Custom Headers:
 > A header is ^  exactly like that,  there are 6 different header types h1-h6, defined as (## Header) in markdown with the number of # symbols being significant.
 
 <div class="alert alert-info">
@@ -137,14 +145,14 @@ h1 {
 </ul>
 </div>
 
-### Developing css in Visual Studio Code
+# Developing css in Visual Studio Code:
 
-#### Color:
+## Color:
 > Hovering over any color opens a color selector window, and will automatically fill in the required code for the color you pick.
 
 ![](https://i.imgur.com/BqfIBto.png)
 
-#### Styles:
+## Styles:
 > Starting to type inside of a block will give you different suggestions of styling
 
 ![](https://i.imgur.com/giAkITe.png)
@@ -152,7 +160,7 @@ h1 {
   <strong>Searching on the web for your specific needs can also help you find different attributes to change.</strong>
 </div>
 
-### Blockquotes
+# Blockquotes:
 > This is a block quote
 
 <div class="alert alert-info">
@@ -185,7 +193,7 @@ blockquote {
 
 <br>
 
-### Adding the shadow to alert boxes
+# Adding the shadow to alert boxes:
 > This is a little more complicated, as we will be "wrapping" the alert box with a shadow.
 
 If I wanted to give a shadow to alert for jupyter notebook I would have in my css file:
@@ -239,13 +247,14 @@ Which would look like:
 
 <br>
 
-### In Conclusion
+# In Conclusion:
 > We only looked at a few ways you can edit the css of a notebook or webpage, but there are many more markdown and html attributes you can change with css ...  **EXPLORE!**
 
-### Useful Links:
+# Useful Links:
 
 <br>
 
 - <a href="https://github.com/skelouse">My github</a>
 - <a href="http://www.csszengarden.com/">CSS zen garden</a>: For css examples, inspect the page
 - <a href="https://lmgtfy.com/?q=css+help">The greatest source of css help on the planet!</a>
+- Inspect this page or elements on any webpage!
