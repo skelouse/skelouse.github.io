@@ -5,13 +5,13 @@ date:       2020-09-07 23:47:07 -0400
 permalink:  styling_a_jupyter_notebook
 ---
 
-> Here I will go over multiple methods of using css and html to style and prettify your jupyter notebook like my photo below, or use in any html/css scenario going over:
-> - alert boxes
-> - editing attributes in VSCode
-> - css of headers
-> - css of blockquotes
-> - adding a shadow to an alert box
-> - using markdown in a &lt;div&gt; block
+Here I will go over multiple methods of using css and html to style and prettify your jupyter notebook like my photo below, or use in any html/css scenario going over:
+- alert boxes
+- editing attributes in VSCode
+- css of headers
+- css of blockquotes
+- adding a shadow to an alert box
+- using markdown in a &lt;div&gt; block
 
 ## Before:
 
@@ -67,7 +67,6 @@ The folder structure you would use for css.
 |  |
 |  +--custom.css
 ```
-<br>
 
 If you want to import the css from that folder structure into your notebook you would use the below in a code cell.
 
@@ -95,7 +94,7 @@ css_styling()
 <br>
 
 # Custom Headers:
-> A header is ^  exactly like that,  there are 6 different header types h1-h6, defined as (## Header) in markdown with the number of # symbols being significant.
+> A header is ^  exactly like that,  there are 6 different header types ( h1-h6 )    defined as (## Header) in markdown with the number of # symbols being significant.
 
 <div class="alert alert-info">
   <strong>Lets take an h1 header as example:</strong>
@@ -134,7 +133,7 @@ h1 {
 
 
 <div class="alert alert-warning">
-  <strong>An HTML developing environment:</strong>
+  <strong>An HTML/CSS developing environment:</strong>
 <ul>
 <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 <ul>
@@ -144,6 +143,7 @@ h1 {
 </ul><li>For testing with markdown <a href="https://markdown-it.github.io/">markdown-it</a> Which I am using right now</li>
 </ul>
 </div>
+<br>
 
 # Developing css in Visual Studio Code:
 
@@ -214,14 +214,11 @@ If I wanted to give a shadow to alert for jupyter notebook I would have in my cs
 }
 &lt;/style&gt;
 </code></pre>
-<br>
 And I would display the alert box in the html/markdown as
 <pre><code>&lt;div class=&quot;shadow alert alert-success&quot;&gt;  /*Note the 'shadow' keyword*/
   This is an alert box
 &lt;/div&gt;
 </code></pre>
-
-<br>
 
 <div class="alert alert-info" markdown="1">
 
