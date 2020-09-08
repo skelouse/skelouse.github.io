@@ -247,11 +247,10 @@ Which would look like:
 # In Conclusion:
 > We only looked at a few ways you can edit the css of a notebook or webpage, but there are many more markdown and html attributes you can change with css ...  **EXPLORE!**
 
+<br>
 # Useful Links:
 
-<br>
-
 - <a href="https://github.com/skelouse">My github</a>
-- <a href="http://www.csszengarden.com/">CSS zen garden</a>: For css examples, inspect the page
+- <a href="http://www.csszengarden.com/">CSS zen garden: For css examples, inspect the page</a>
 - <a href="https://lmgtfy.com/?q=css+help">The greatest source of css help on the planet!</a>
 - Inspect this page or elements on any webpage!
