@@ -48,4 +48,41 @@ class="alert alert-info"  for <p class="alert alert-info">blue</p>
 ## Adding css into a notebook:
 > css is the different shadows, colors, and titles you see in the After: screenshot above
 
+```
+The folder structure you would use for css.
+
++--student.ipynb
+|
+|
++--styles
+|  |
+|  |
+|  +--custom.css
+```
+<br>
+
+If you want to import the css from that folder structure into your notebook you would use the below code in a code cell.
+
+```
+# Styling notebook
+from IPython.core.display import HTML
+def css_styling():
+    styles = open("./styles/custom.css", "r").read()
+    return HTML(styles)
+css_styling()
+```
+
+<div class="alert alert-info">
+  <strong>Inside of the `custom.css` file you can have things like:</strong>
+<ul>
+<li>Custom Headers</li>
+<li>Codeblocks</li>
+<li>Bolded text</li>
+<li>*alerts*</li>
+<li>blockquotes</li>
+<li>listelements</li>
+<li> And many more</li>
+</ul> 
+</div>
+
 
