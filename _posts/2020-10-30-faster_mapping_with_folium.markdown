@@ -35,12 +35,13 @@ We'll start by defining a location of where to center the map.  The dataset we a
 
 
 ```python
-# Define the location to start the map at  
-location = (47.550579, -121.981752)  
+# Define the location to start the map at </br>
+location = (47.550579, -121.981752)
 
-# Initializing the map  
+# Initializing the map</br>
 map = folium.Map(location=location)
 ```
+
 Next we'll plot some basic points on a map with folium.  The plot will start off at the supplied location, and we will be plotting 10 (latitude/longitudes) from df.  The Latitude and Longitude of the data is stored as `lat` and `long` you may have to use a different iteration techinque if columns are named differently.
 <p>We will be using a folium.Marker on the map, this takes a location, a popup, a tooltip, and whether or not the marker is draggable.  The location is a tuple of latitude, longitude which we are getting from the dataframe iteration along with how many bedrooms our house has for the popup.  The tooltip is what is shown when you hover over the item,  we will programmatically add the given date as the tooltip.</p>
 <p>After building a folium marker with `folium.Marker()` we tag on a `.add_to(map)` to add the point to our map.  This is done for each of the 10 locations we are plotting which if just using the folium Marker will take much processing power if you have thousands of points.  We will go into speeding up the process with custom icons in the next section.</p>
@@ -57,10 +58,14 @@ for indx, row in df.iterrows():
         [lat, long],
         popup=f'<i>House with {bedrooms} bedrooms</i>',
         tooltip=f'Sold on {date}').add_to(map)
-    # Stop at 10 points  
+    # Stop at 10 points
     if indx == 10:
         break
-map
+
+# Function I used for displaying it on this blog      
+# map.save("./maps/first.html")
+#map
+
 ```
 
 <iframe
@@ -70,24 +75,6 @@ map
     frameborder="0"
     allowfullscreen
 ></iframe>
-
-
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
 
 ## Icons
 
