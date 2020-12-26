@@ -5,6 +5,11 @@ date:       2020-10-30 12:30:51 -0400
 permalink:  faster_mapping_with_folium
 ---
 
+<meta name="image" property="og:image"
+          content="https://i.imgur.com/I5F0ykK.png">
+<meta name="author"
+        content="Samuel Stoltenberg">
+
 <p>Here we showcase different ways of creating a map with folium, and different attributes of markers and circles. There are many ways to build a map, so don't be afraid to dig into documentation or message me on Linkedin if you need something specific.</p>
 <p>When a map is created you can either simply view it in a jupyter notebook, or extract it with
 <code>map.save("/path/to/map.html")</code>.  I've saved each of the below maps, and put them in iframes pointing to each map.html file in the
