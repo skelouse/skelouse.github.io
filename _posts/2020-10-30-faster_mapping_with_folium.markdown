@@ -3,14 +3,9 @@ layout: post
 title:      "Faster Mapping With Folium"
 date:       2020-10-30 12:30:51 -0400
 permalink:  faster_mapping_with_folium
-image: 
+image:      https://i.imgur.com/JSO3JL4.png
 ---
-<head>
-<meta name="image" property="og:image"
-          content="https://i.imgur.com/JSO3JL4.png">
-<meta name="author"
-        content="Samuel Stoltenberg">
-</head>
+
 
 <p>Here we showcase different ways of creating a map with folium, and different attributes of markers and circles. There are many ways to build a map, so don't be afraid to dig into documentation or message me on Linkedin if you need something specific.</p>
 <p>When a map is created you can either simply view it in a jupyter notebook, or extract it with
