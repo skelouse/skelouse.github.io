@@ -31,7 +31,7 @@ There are many things we can do with folium that we will be going through such a
 - colors
 - map tiles
 - size
-- colors
+- opacity
 - zoom_level
 - and many more found in the [folium documentation](https://python-visualization.github.io/folium/)
 
@@ -50,7 +50,9 @@ map = folium.Map(location=location)
 
 Next we'll plot some basic points on a map with folium.  The plot will start off at the supplied location, and we will be plotting 10 (latitude/longitudes) from df.  The Latitude and Longitude of the data is stored as `lat` and `long` you may have to use a different iteration technique if columns are named differently.
 <p>We will be using a folium.Marker on the map, this takes a location, a popup, a tooltip, and whether or not the marker is draggable.  The location is a tuple of latitude, longitude which we are getting from the dataframe iteration along with how many bedrooms our house has for the popup.  The tooltip is what is shown when you hover over the item,  we will programmatically add the given date as the tooltip.</p>
-<p>After building a folium marker with `folium.Marker()` we tag on a `.add_to(map)` to add the point to our map.  This is done for each of the 10 locations we are plotting which if just using the folium Marker will take much processing power if you have thousands of points.  We will go into speeding up the process with custom Points in the next section.</p>
+<p>After building a folium marker with
+<code>folium.Marker()`</code> we tag on a 
+<code>.add_to(map)`</code> to add the point to our map.  This is done for each of the 10 locations we are plotting which if just using the folium Marker will take much processing power if you have thousands of points.  We will go into speeding up the process with custom Points in the next section.</p>
 
 
 ```python
@@ -86,7 +88,7 @@ map
 
 ## Points
 
-<p>Why do you want a point?  A point is much faster than a marker, as it doesn't highlight when you hover over it, and is simply a circle drawn on the map versus with a Marker there are many other attributes attached to it.  It would take several minutes or hours to load a map of only Markers if it had several thousand of them.</p>
+<p>Why do you want a point?  A point is much faster than a marker, as it doesn't highlight when you hover over it, and is simply a circle drawn on the map versus with a Marker there are many other attributes attached to it.  It would take several minutes or hours to load a map of several thousand Markers versus seconds with several thousand Circles.</p>
 <p>Here we will touch on the Circle point from folium, there are different points such as a Rectangle, Polygon and more.  This is simply touching on the customization of points for speed purposes.  There are many attributes of a point we can define, such as:
 <ul>
     <li>radius</li>
