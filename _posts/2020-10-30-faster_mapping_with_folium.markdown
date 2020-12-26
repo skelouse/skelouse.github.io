@@ -3,10 +3,11 @@ layout: post
 title:      "Faster Mapping With Folium"
 date:       2020-10-30 12:30:51 -0400
 permalink:  faster_mapping_with_folium
+image: 
 ---
 <head>
 <meta name="image" property="og:image"
-          content="https://i.imgur.com/I5F0ykK.png">
+          content="https://i.imgur.com/JSO3JL4.png">
 <meta name="author"
         content="Samuel Stoltenberg">
 </head>
