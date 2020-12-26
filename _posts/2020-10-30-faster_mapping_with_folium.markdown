@@ -34,13 +34,13 @@ There are many things we can do with folium that we will be going through such a
 We'll start by defining a location of where to center the map.  The dataset we are using is centered near Seattle, Washington.  Be sure and take note below when a map is created with ```map = folium.Map(location=location)```  This is building a folium map at the given location.
 
 
-```python
+<code>
 # Define the location to start the map at
 location = (47.550579, -121.981752)
 
 # Initializing the map
 map = folium.Map(location=location)
-```
+</code>
 
 Next we'll plot some basic points on a map with folium.  The plot will start off at the supplied location, and we will be plotting 10 (latitude/longitudes) from df.  The Latitude and Longitude of the data is stored as `lat` and `long` you may have to use a different iteration techinque if columns are named differently.
 <p>We will be using a folium.Marker on the map, this takes a location, a popup, a tooltip, and whether or not the marker is draggable.  The location is a tuple of latitude, longitude which we are getting from the dataframe iteration along with how many bedrooms our house has for the popup.  The tooltip is what is shown when you hover over the item,  we will programmatically add the given date as the tooltip.</p>
