@@ -4,7 +4,7 @@ title:      "Faster Mapping With Folium"
 date:       2020-10-30 12:30:51 -0400
 permalink:  faster_mapping_with_folium
 image:      https://i.imgur.com/JSO3JL4.png
-description: Showcasing folium mapping attributes
+description: Here we showcase different ways of creating a map with folium, and different attributes of markers and circles.
 ---
 
 
