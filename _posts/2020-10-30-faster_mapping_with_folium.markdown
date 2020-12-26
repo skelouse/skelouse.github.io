@@ -6,7 +6,7 @@ permalink:  faster_mapping_with_folium
 ---
 
 <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Imports,-and-getting-the-data" data-toc-modified-id="Imports,-and-getting-the-data-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Imports, and getting the data</a></span></li><li><span><a href="#Plotting-with-folium" data-toc-modified-id="Plotting-with-folium-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Plotting with folium</a></span></li><li><span><a href="#Points" data-toc-modified-id="Points-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Points</a></span><ul class="toc-item"><li><span><a href="#Radius" data-toc-modified-id="Radius-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Radius</a></span></li></ul></li><li><span><a href="#colors" data-toc-modified-id="colors-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>colors</a></span></li><li><span><a href="#map-tiles" data-toc-modified-id="map-tiles-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>map tiles</a></span></li><li><span><a href="#size" data-toc-modified-id="size-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>size</a></span></li><li><span><a href="#colors" data-toc-modified-id="colors-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>colors</a></span></li><li><span><a href="#zoom_level" data-toc-modified-id="zoom_level-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>zoom_level</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Imports,-and-getting-the-data" data-toc-modified-id="Imports,-and-getting-the-data-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Imports, and getting the data</a></span></li><li><span><a href="#Plotting-with-folium" data-toc-modified-id="Plotting-with-folium-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Plotting with folium</a></span></li><li><span><a href="#Points" data-toc-modified-id="Points-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Points</a></span><ul class="toc-item"><li><span><a href="#Radius" data-toc-modified-id="Radius-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Radius</a></span></li></ul></li><li><span><a href="#colors" data-toc-modified-id="colors-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>colors</a></span></li><li><span><a href="#weight" data-toc-modified-id="weight-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>weight</a></span></li><li><span><a href="#opacity" data-toc-modified-id="opacity-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>opacity</a></span></li><li><span><a href="#zoom_level" data-toc-modified-id="zoom_level-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>zoom_level</a></span></li><li><span><a href="#map-tiles" data-toc-modified-id="map-tiles-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>map tiles</a></span><ul class="toc-item"><li><ul class="toc-item"><li><span><a href="#Stamen-Terrain" data-toc-modified-id="Stamen-Terrain-8.0.1"><span class="toc-item-num">8.0.1&nbsp;&nbsp;</span>Stamen Terrain</a></span></li><li><span><a href="#Stamen-Toner" data-toc-modified-id="Stamen-Toner-8.0.2"><span class="toc-item-num">8.0.2&nbsp;&nbsp;</span>Stamen Toner</a></span></li><li><span><a href="#Stamen-Watercolor" data-toc-modified-id="Stamen-Watercolor-8.0.3"><span class="toc-item-num">8.0.3&nbsp;&nbsp;</span>Stamen Watercolor</a></span></li><li><span><a href="#CartoDB-positron" data-toc-modified-id="CartoDB-positron-8.0.4"><span class="toc-item-num">8.0.4&nbsp;&nbsp;</span>CartoDB positron</a></span></li><li><span><a href="#CartoDB-dark_matter" data-toc-modified-id="CartoDB-dark_matter-8.0.5"><span class="toc-item-num">8.0.5&nbsp;&nbsp;</span>CartoDB dark_matter</a></span></li></ul></li></ul></li></ul></div>
 
 ## Imports, and getting the data
 > To get started we will import the required libraries and data
@@ -65,8 +65,10 @@ for indx, row in df.iterrows():
     if indx == 10:
         break
 
-# Function I used for displaying it on this blog      
+# Function I used for displaying it on this blog
+
 # map.save("./maps/first.html")
+
 map
 ```
 
@@ -80,7 +82,7 @@ map
 
 ## Points
 
-<p>Why do you want a point?  A point is much faster than a marker, as it doesn't highlight when you hover over it, and is simply a circle drawn on the map versus with a Marker there are many other attributes attached to it.  It would take several minutes to load a map of only Markers.</p>
+<p>Why do you want a point?  A point is much faster than a marker, as it doesn't highlight when you hover over it, and is simply a circle drawn on the map versus with a Marker there are many other attributes attached to it.  It would take several minutes or hours to load a map of only Markers if it had several thousand of them.</p>
 <p>Here we will touch on the Circle point from folium, there are different points such as a Rectangle, Polygon and more.  This is simply touching on the customization of points for speed purposes.  There are many attributes of a point we can define, such as:
 <ul>
     <li>radius</li>
@@ -127,10 +129,323 @@ map
 
 ## colors
 
-## map tiles
+Next we are going to go over the circle color.  You can either set a color for all of the circles to be, make different colors for different arguments, or have a gradient of colors.  I will be showing the gradient of colors below.  To generate a gradient we will be using the colour module, which is installed with `pip install colour`.  After importing color we will look at our grade feature, as that is what we will be using for the color.  We need the maximum of that feature so we can deduce how many colors our color gradient needs.
 
-## size
 
-## colors
+```python
+from colour import Color
+```
+
+
+```python
+df['grade'].max(), df['grade'].min()
+```
+
+
+
+
+    (13, 3)
+
+
+
+
+```python
+colors = list(Color('red').range_to(Color('green'), 13))
+len(colors), colors
+```
+
+
+
+
+    (13,
+     [<Color red>,
+      <Color #f42900>,
+      <Color #ea4e00>,
+      <Color #df7000>,
+      <Color #d58e00>,
+      <Color #caa800>,
+      <Color #bfbf00>,
+      <Color #97b500>,
+      <Color #72aa00>,
+      <Color #50a000>,
+      <Color #329500>,
+      <Color #178b00>,
+      <Color green>])
+
+
+
+The colors are objects of Color so we will use a list comprehension to make the colors simple strings to be used by folium.  Each color has a `.get_web()` method for extracting the raw string.
+
+
+```python
+colors = [color.get_web() for color in colors]
+colors
+```
+
+
+
+
+    ['red',
+     '#f42900',
+     '#ea4e00',
+     '#df7000',
+     '#d58e00',
+     '#caa800',
+     '#bfbf00',
+     '#97b500',
+     '#72aa00',
+     '#50a000',
+     '#329500',
+     '#178b00',
+     'green']
+
+
+
+There are 13 different grades, so we made a range of 13 colors from red to green.  As a list starts with 0 we will be using `grade-1` to define which color we will use for our circle.  After defining the color we can use it for the circle as before with the radius.
+
+
+```python
+map = folium.Map(location=location)
+for indx, row in df.iterrows():
+    lat = row['lat']
+    long = row['long']
+    grade = row['grade']
+    
+    # Define what color the circle will be
+    
+    color = colors[grade-1]
+    
+    folium.Circle(
+        [lat, long],
+        radius=1000,
+        weight=50,
+        color=color).add_to(map)
+    # Stop at 10 points
+
+    if indx == 10:
+        break
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/color.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+## weight
+For the weight we will be using the price feature.  Price is quite large relative to the map so we will be dividing the price by 10,000.  Just like before with the grade and color weight is an argument of the folium.Circle().
+
+
+```python
+map = folium.Map(location=location)
+for indx, row in df.iterrows():
+    lat = row['lat']
+    long = row['long']
+    price = row['price']
+    
+    folium.Circle(
+        [lat, long],
+        radius=1,
+        weight=price/10000).add_to(map)
+    # Stop at 10 points
+
+    if indx == 10:
+        break
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/weight.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+## opacity
+
+Opacity is a float argument of the Circle between 0 and 1 defining how transparent an object is.  Since it is between 0 and 1 we will first import MinMaxScaler from scikit-learn, and then scale the `yr_built` feature.  After the feature is scaled we can use it for the opacity argument.  The scaler requires a 2D array, thus when extracting and defining `yr_built` we use [[double brackets]] to extract a 2D array rather than a 1D Series with [single brackets].
+
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+
+df[['yr_built']] = scaler.fit_transform(df[['yr_built']])
+```
+
+Let's build it!  After using the scaler our yr_built feature is now all values between 0 and 1 with the previous max being 1 and the previous min being 0.  I first tried using sqft_living and bedrooms as the opacity, but the first ten homes of the dataset were almost completely transparent!
+
+
+```python
+map = folium.Map(location=location)
+for indx, row in df.iterrows():
+    lat = row['lat']
+    long = row['long']
+    year = row['yr_built']
+    
+    folium.Circle(
+        [lat, long],
+        radius=1000,
+        opacity=year).add_to(map)
+    # Stop at 10 points
+
+    if indx == 10:
+        break
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/opacity.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
 
 ## zoom_level
+
+The zoom level is defined by four attributes.
+- max_zoom the maximum level you can zoom into the map
+- min_zoom is how far you can zoom out from the map
+- zoom_start is 
+- zoom_control is whether a user can zoom in and out of the map, or if they are stuck at the defined zoom_start
+
+The zoom level is values between 0 and 18, 0 being a view of the whole globe multiple times, and 18 being close enough to read side streets.  We'll show zoomed all the way in first, and then show zoomed all the way out
+
+
+```python
+map = folium.Map(location=location, zoom_start=18)
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/zoom_start.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+
+```python
+map = folium.Map(location=location, zoom_start=0)
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/zoom_end.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+## map tiles
+
+There are ten tile patterns within folium, six of which are free.   We will be showcasing the free tiles, but here is a list of all the tiles obtained from [folium](https://python-visualization.github.io/folium/modules.html).
+
+ - OpenStreetMap
+ - Mapbox Bright (Limited levels of zoom for free tiles)
+ - Mapbox Control Room (Limited levels of zoom for free tiles)
+ - Stamen (Terrain, Toner, and Watercolor)
+ - Cloudmade (Must pass API key)
+ - Mapbox (Must pass API key)
+ - CartoDB (positron and dark_matter)
+ 
+We won't be touching on the `OpenStreetMap` as that is the default you have seen in our maps before.  We will start off with Stamen Terrain.  When creating the map it takes a `tiles` argument where we will feed the string "Stamen Terrain".  After that we will show Stamen (Toner and Watercolor), and CartoDB (positron and dark_matter).
+
+#### Stamen Terrain
+
+
+```python
+map = folium.Map(
+    location=location,
+    tiles='Stamen Terrain')
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/s-terrain.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+#### Stamen Toner
+
+
+```python
+map = folium.Map(
+    location=location,
+    tiles='Stamen Toner')
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/s-toner.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+#### Stamen Watercolor
+
+
+```python
+map = folium.Map(
+    location=location,
+    tiles='Stamen Watercolor')
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/s-watercolor.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+#### CartoDB positron
+
+
+```python
+map = folium.Map(
+    location=location,
+    tiles='CartoDB positron')
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/c-positron.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+#### CartoDB dark_matter
+
+
+```python
+map = folium.Map(
+    location=location,
+    tiles='CartoDB dark_matter')
+map
+```
+
+<iframe
+    width="900"
+    height="600"
+    src="./maps/c-dark-matter.html"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+
+To end I will point you to the [folium documentation](https://python-visualization.github.io/folium/index.html) read through it and make your own map!  Share to my [linkedin](https://www.linkedin.com/in/samuel-stoltenberg-0b799bb5/) what you come up with.  Download the data set we used from [here](https://github.com/skelouse/mod-2-project/blob/master/kc_house_data.csv).
