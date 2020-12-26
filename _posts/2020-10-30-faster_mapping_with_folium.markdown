@@ -36,11 +36,11 @@ We'll start by defining a location of where to center the map.  The dataset we a
 
 ```python
 # Define the location to start the map at
-</br>
+
 location = (47.550579, -121.981752)
 
 # Initializing the map
-</br>
+
 map = folium.Map(location=location)
 ```
 
