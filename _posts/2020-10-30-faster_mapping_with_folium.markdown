@@ -318,12 +318,12 @@ map
 ## zoom_level
 
 The zoom level is defined by four attributes.
-- max_zoom the maximum level you can zoom into the map
-- min_zoom is how far you can zoom out from the map
-- zoom_start is 
-- zoom_control is whether a user can zoom in and out of the map, or if they are stuck at the defined zoom_start
+- max_zoom the maximum level you can zoom into the map.
+- min_zoom is how far you can zoom out from the map.
+- zoom_start is how far you can zoom into the map.
+- zoom_control is whether a user can zoom in and out of the map, or if they are stuck at the defined zoom_start.
 
-The zoom level is values between 0 and 18, 0 being a view of the whole globe multiple times, and 18 being close enough to read side streets.  We'll show zoomed all the way in first, and then show zoomed all the way out
+The zoom level is values between 0 and 18, 0 being a view of the whole globe multiple times, and 18 being close enough to read side streets.  We'll show zoomed all the way in first, and then show zoomed all the way out.
 
 
 ```python
