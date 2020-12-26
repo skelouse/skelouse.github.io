@@ -5,12 +5,8 @@ date:       2020-10-30 12:30:51 -0400
 permalink:  faster_mapping_with_folium
 ---
 
-
-<!DOCTYPE html>
-<html>
 <head><meta charset="utf-8" />
 
-<title>Faster Mapping With Folium</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13352,7 +13348,3 @@ div#notebook {
   </div>
 </body>
 
- 
-
-
-</html>
