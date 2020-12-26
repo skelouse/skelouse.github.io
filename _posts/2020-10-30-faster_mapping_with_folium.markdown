@@ -14,7 +14,8 @@ permalink:  faster_mapping_with_folium
 
 
 ```python
-#!pip install folium
+#  pip install folium
+
 import folium
 import pandas as pd
 import requests
@@ -44,7 +45,7 @@ location = (47.550579, -121.981752)
 map = folium.Map(location=location)
 ```
 
-Next we'll plot some basic points on a map with folium.  The plot will start off at the supplied location, and we will be plotting 10 (latitude/longitudes) from df.  The Latitude and Longitude of the data is stored as `lat` and `long` you may have to use a different iteration techinque if columns are named differently.
+Next we'll plot some basic points on a map with folium.  The plot will start off at the supplied location, and we will be plotting 10 (latitude/longitudes) from df.  The Latitude and Longitude of the data is stored as `lat` and `long` you may have to use a different iteration technique if columns are named differently.
 <p>We will be using a folium.Marker on the map, this takes a location, a popup, a tooltip, and whether or not the marker is draggable.  The location is a tuple of latitude, longitude which we are getting from the dataframe iteration along with how many bedrooms our house has for the popup.  The tooltip is what is shown when you hover over the item,  we will programmatically add the given date as the tooltip.</p>
 <p>After building a folium marker with `folium.Marker()` we tag on a `.add_to(map)` to add the point to our map.  This is done for each of the 10 locations we are plotting which if just using the folium Marker will take much processing power if you have thousands of points.  We will go into speeding up the process with custom Points in the next section.</p>
 
@@ -99,7 +100,7 @@ Each of the above can take a set variable, or you can program them however you l
 
 ### Radius
 
-We will start with the radius,  the radius is small so we will have `1000 * bedrooms` to showcase the radius.  We keep the same style as before except now we are using a `folium.Circle()` rather than the `folium.Marker()`
+We will start with the radius,  the radius is small, so we will have `1000 * bedrooms` to showcase the radius.  We keep the same style as before except now we are using a `folium.Circle()` rather than the `folium.Marker()`
 
 
 ```python
@@ -129,7 +130,7 @@ map
 
 ## colors
 
-Next we are going to go over the circle color.  You can either set a color for all of the circles to be, make different colors for different arguments, or have a gradient of colors.  I will be showing the gradient of colors below.  To generate a gradient we will be using the colour module, which is installed with `pip install colour`.  After importing color we will look at our grade feature, as that is what we will be using for the color.  We need the maximum of that feature so we can deduce how many colors our color gradient needs.
+Next we are going to go over the circle color.  You can either set a color for all the circles to be, make different colors for different arguments, or have a gradient of colors.  I will be showing the gradient of colors below.  To generate a gradient we will be using the colour module, which is installed with `pip install colour`.  After importing color we will look at our grade feature, as that is what we will be using for the color.  We need the maximum of that feature, so we can deduce how many colors our color gradient needs.
 
 
 ```python
@@ -174,7 +175,7 @@ len(colors), colors
 
 
 
-The colors are objects of Color so we will use a list comprehension to make the colors simple strings to be used by folium.  Each color has a `.get_web()` method for extracting the raw string.
+The colors are objects of Color, so we will use a list comprehension to make the colors simple strings to be used by folium.  Each color has a `.get_web()` method for extracting the raw string.
 
 
 ```python
@@ -236,7 +237,7 @@ map
 ></iframe>
 
 ## weight
-For the weight we will be using the price feature.  Price is quite large relative to the map so we will be dividing the price by 10,000.  Just like before with the grade and color weight is an argument of the folium.Circle().
+For the weight we will be using the price feature.  Price is quite large relative to the map, so we will be dividing the price by 10,000.  Just like before with the grade and color weight is an argument of the folium.Circle().
 
 
 ```python
