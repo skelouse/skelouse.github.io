@@ -11,4 +11,4 @@ bought an item, or is trying to scam the store for cash.  I had seen a future wi
 		
 <p>     At the time, the department's dates were tracked, and entered monthly onto a terribly organized piece of paper.  I wouldn't want to check it that way, so how could I expect my staff to do it.  So I began my journey into Python starting with Sololearn, and then digging into the Python-Kivy framework for app development.  I spent my days at work, and nights working on my miscellaneous projects, even stepping down so I had more time to work on development.  Nearly two years into the future, I have a fully functional app with firebase integration for tracking the expiry dates.  Then came the self-doubt, how do you sell something with no proof of concept, how do you make people see things through your eyes when the only concern is money?  The answer was right in front of my eyes, data science.</p>
 
-<p>How much will we be able to simulate, craft, and vizualize in the near future by simply running algorithms?</p>
+<p>How much will we be able to simulate, craft, and visualize in the near future by simply running algorithms?</p>
