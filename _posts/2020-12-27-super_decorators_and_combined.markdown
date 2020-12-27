@@ -2,6 +2,7 @@
 layout: post
 title:      "Super, Decorators, and Combined"
 date:       2020-12-27 00:00:00 -0400
+image:      https://i.imgur.com/Xbofr80.png
 permalink:  super_decorators_and_combined
 ---
 
