@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Super, Decorators, and combined"
+title:      "Super, Decorators, and Combined"
 date:       2020-12-27 00:00:00 -0400
 permalink:  super_decorators_and_combined
 ---
