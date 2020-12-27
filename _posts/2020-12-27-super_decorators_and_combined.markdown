@@ -296,18 +296,10 @@ You can see the IDs are different for parent1 and parent2 after the copy functio
 
 ```python
 class Child(Parent):
-    def __init__(self, x=0, y=0, z=0, parent=None):
-        
-        # If there is a parent the child will inherit the x and y of the parent 
-        
-        if parent:
-            self.parent = parent
-            self.x = parent.x
-            self.y = parent.y
-        else:
-            self.parent = None
-            self.x = x
-            self.y = y
+    def __init__(self, parent, z=0):
+        self.parent = parent
+        self.x = parent.x
+        self.y = parent.y
         self.z = z
         
 child1 = Child(1, 2, 3)
