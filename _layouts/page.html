@@ -11,7 +11,6 @@ layout: default
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
                     <span class="subheading">{% if page.title != "About" %}{{ site.description }}{% endif %}</span>
-                    <!-- <a href="https://sites.google.com/skelouse.com/home/main?authuser=1">About</a> -->
                 </div>
             </div>
         </div>
@@ -20,11 +19,13 @@ layout: default
 
 <!-- Main Content -->
 <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            {{ content }}
-        </div>
-    </div>
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			{{ content }}
+		</div>
+	</div>
 </div>
 
 <hr>
+
+<!-- <a href="https://sites.google.com/skelouse.com/home/main?authuser=1">About</a> -->
