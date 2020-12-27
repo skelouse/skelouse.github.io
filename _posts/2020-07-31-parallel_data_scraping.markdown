@@ -2,7 +2,7 @@
 layout: post
 title:      "Scraping Data As a Group"
 date:       2020-07-31 13:10:08 -0400
-permalink:  project_placeholder
+permalink:  parallel_data_scraping
 ---
 
 The teacher supplies a project, and the students complete the project.  What if that data involves web scraping?  Well I had the grand idea of getting the entire class in on scraping the budgets and grosses of 700,000 movies to match the 1-2 million movie datasets i downloaded from [IMDB](https://datasets.imdbws.com/).  So I went on my merry way and split the IMDB indexes I had into 10 parts, each with the name of a person.
