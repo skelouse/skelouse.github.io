@@ -3,12 +3,6 @@
  * Copyright 2015 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
-
-.sam-heading {
-  backdrop-filter: blur(5px);
-  background: rgba(43, 0, 51, 0.418);
-}
-
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
