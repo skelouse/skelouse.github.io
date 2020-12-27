@@ -7,7 +7,7 @@ permalink:  super_decorators_and_combined
 ---
 
 
-Here we'll be talking about how to use the super method, function decorators, and combining the two.  We'll start off with the super method, and how some use cases.
+Here we'll be talking about how to use the super method, function decorators, and combining the two.  We'll start off with the super method, and some use cases.
 
 ## Super
 
