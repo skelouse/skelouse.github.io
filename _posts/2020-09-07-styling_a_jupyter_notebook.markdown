@@ -252,7 +252,7 @@ Which would look like:
 
 - <a href="https://github.com/skelouse">My github</a>
 - <a href="http://www.csszengarden.com/">CSS zen garden</a>: For css examples, inspect the page
-- <a href="https://lmgtfy.com/?q=css+help">The greatest source of css help on the planet!</a>
+- <a href="https://google.com/">The greatest source of css help on the planet!</a>
 - Inspect this page or elements on any webpage!
 
 <style>
