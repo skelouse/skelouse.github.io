@@ -215,6 +215,7 @@ fig, axes = plt.subplots(nrows=2, ncols=2)
 axes = axes.flatten()
 
 # Tight Layout
+
 fig.tight_layout()
 
 names = ['top_left', 'top_right', 'bottom left', 'bottom_right']
@@ -440,6 +441,7 @@ I'll start off by showing you the basic grid spec usage from matplotlib's [docum
 
 ```python
 # Using documentation style editing
+
 import matplotlib.gridspec as gridspec
 
 fig = plt.figure(constrained_layout=True)
@@ -472,15 +474,18 @@ fig = plt.figure(constrained_layout=True)
 spec = gridspec.GridSpec(ncols=5, nrows=5, figure=fig)
 
 # Iterate the rows that will not be in the large plot
+
 single_axis = [0, 3, 4]
 for num in single_axis:
     
     # Iterate over each column of the row, and plot
+
     for i in range(5):
         ax = fig.add_subplot(spec[num, i])
         ax.plot(X, y)
 
 # Slice out the spec of the large plot
+
 mid_ax = fig.add_subplot(spec[1:3, :])
 mid_ax.plot(X, y, color='C1')
 ```
@@ -585,12 +590,14 @@ Now if we wanted to plot multiple datasets on one plot we may want to have a leg
 
 ```python
 # Separating survived from died
+
 survived_df = df.loc[df['survived'] == 1]
 died_df = df.loc[df['survived'] == 0]
 
 fig, ax = plt.subplots()
 
 # Setting an opacity variable for how transparent the points are
+
 opacity=.2
 
 ax.scatter(x='fare', y='pclass', data=survived_df, label='survived',
