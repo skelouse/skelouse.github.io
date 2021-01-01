@@ -87,7 +87,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/first.html"
+    src="./data/maps/first.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -134,7 +134,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/radius.html"
+    src="./data/maps/radius.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -242,7 +242,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/color.html"
+    src="./data/maps/color.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -272,7 +272,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/weight.html"
+    src="./data/maps/weight.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -313,7 +313,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/opacity.html"
+    src="./data/maps/opacity.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -337,7 +337,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/zoom_start.html"
+    src="./data/maps/zoom_start.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -351,7 +351,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/zoom_end.html"
+    src="./data/maps/zoom_end.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -383,7 +383,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/s-terrain.html"
+    src="./data/maps/s-terrain.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -401,7 +401,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/s-toner.html"
+    src="./data/maps/s-toner.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -419,7 +419,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/s-watercolor.html"
+    src="./data/maps/s-watercolor.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -437,7 +437,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/c-positron.html"
+    src="./data/maps/c-positron.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
@@ -455,7 +455,7 @@ map
 <iframe
     width="900"
     height="600"
-    src="./maps/c-dark-matter.html"
+    src="./data/maps/c-dark-matter.html"
     frameborder="0"
     allowfullscreen
 ></iframe>
