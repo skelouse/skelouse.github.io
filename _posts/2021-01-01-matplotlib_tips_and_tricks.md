@@ -24,14 +24,14 @@ The plot size can be defined in `plt.subplots()` as a keyword argument `figsize=
 fig, ax = plt.subplots(figsize=(10, 7))
 ```
 
-![fig_1](./data/figures/figure_1.png)
+![fig_1](./data/figures_1/figure_1.png)
 
 
 ```python
 fig, ax = plt.subplots(figsize=(1, .7))
 ```
 
-![fig_2](./data/figures/figure_2.png/)
+![fig_2](./data/figures_1/figure_2.png)
 
 ### Figure With Two Rows
 
@@ -42,7 +42,7 @@ We can also define a grid of different plots with `plt.subplots()` containing `n
 fig, axes = plt.subplots(nrows=2)
 ```
 
-![fig_3](./data/figures/figure_3.png/)
+![fig_3](./data/figures_1/figure_3.png)
 
 ### Figure With Two Columns
 
@@ -53,7 +53,7 @@ Now we plot a figure with two columns.
 fig, axes = plt.subplots(ncols=2)
 ```
 
-![fig_4](./data/figures/figure_4.png/)
+![fig_4](./data/figures_1/figure_4.png)
 
 ## Basic Plots
 
@@ -67,7 +67,7 @@ y = X
 plt.plot(X, y)
 ```
 
-![fig_5](./data/figures/figure_5.png/)
+![fig_5](./data/figures_1/figure_5.png)
 
 ### Ax Lines
 
@@ -81,7 +81,7 @@ plt.axhline(10, color='C1')
 plt.axvline(15, color='C2')
 ```
 
-![fig_6](./data/figures/figure_6.png/)
+![fig_6](./data/figures_1/figure_6.png)
 
 ### Filling Area
 
@@ -97,7 +97,7 @@ plt.axvline(15, color='C2')
 plt.fill([10, 15, 15], [10, 15, 10], color='C3')
 ```
 
-![fig_7](./data/figures/figure_7.png/)
+![fig_7](./data/figures_1/figure_7.png)
 
 ### Annotation
 
@@ -115,7 +115,7 @@ plt.fill([10, 15, 15], [10, 15, 10], color='C3')
 plt.annotate("A red triangle", (10, 15))
 ```
 
-![fig_8](./data/figures/figure_8.png/)
+![fig_8](./data/figures_1/figure_8.png)
 
 ### The Basic Color Scheme
 
@@ -127,7 +127,7 @@ for x in range(10):
     plt.axvline(x, color=f"C{x}")
 ```
 
-![fig_9](./data/figures/figure_9.png/)
+![fig_9](./data/figures_1/figure_9.png)
 
 ## Plotting On Different Axes
 
@@ -138,7 +138,7 @@ Now we'll start plotting on multiple axes.  When `plt.subplots()` is called, two
 fig, axes = plt.subplots(nrows=2)
 ```
 
-![fig_10](./data/figures/figure_10.png/)
+![fig_10](./data/figures_1/figure_10.png)
 
 
 ```python
@@ -161,7 +161,7 @@ To complicate things if we were to say there are two rows and two columns the le
 fig, axes = plt.subplots(nrows=2, ncols=2)
 ```
 
-![fig_11](./data/figures/figure_11.png/)
+![fig_11](./data/figures_1/figure_11.png)
 
 
 ```python
@@ -203,7 +203,7 @@ for ax, name in zip(axes, names):
     ax.set_title(name)
 ```
 
-![fig_12](./data/figures/figure_12.png/)
+![fig_12](./data/figures_1/figure_12.png)
 
 ### tight_layout
 
@@ -223,7 +223,7 @@ for ax, name in zip(axes, names):
     ax.set_title(name)
 ```
 
-![fig_13](./data/figures/figure_13.png/)
+![fig_13](./data/figures_1/figure_13.png)
 
 ## Plotting Data
 
@@ -378,7 +378,7 @@ df is a pandas dataframe that we will use to plot data on different axes. If we 
 plt.plot('fare', data=df)
 ```
 
-![fig_14](./data/figures/figure_14.png/)
+![fig_14](./data/figures_1/figure_14.png)
 
 ### Plotting On Separate Axes
 
@@ -398,7 +398,7 @@ for col, axis_row in zip(plot_cols, axes):
     ax2.hist(col, data=df)
 ```
 
-![fig_15](./data/figures/figure_15.png/)
+![fig_15](./data/figures_1/figure_15.png)
 
 Now before showing how to flatten the axes we will plot the bar and line on the same axis.  There will only be two subplots of the following plot.
 
@@ -414,7 +414,7 @@ for col, ax in zip(plot_cols, axes):
     ax.hist(col, data=df)
 ```
 
-![fig_16](./data/figures/figure_16.png/)
+![fig_16](./data/figures_1/figure_16.png)
 
 We could also use four different columns, and plot each one on a plot.  We would do this by flattening the axes array before iterating over it.
 
@@ -430,7 +430,7 @@ for col, ax in zip(plot_cols, axes):
     ax.hist(col, data=df)
 ```
 
-![fig_17](./data/figures/figure_17.png/)
+![fig_17](./data/figures_1/figure_17.png)
 
 ## Using Grid Spec
 
@@ -449,7 +449,7 @@ ax2 = fig.add_subplot(spec[0, 1])
 ax3 = fig.add_subplot(spec[1, :])
 ```
 
-![fig_18](./data/figures/figure_18.png/)
+![fig_18](./data/figures_1/figure_18.png)
 
 Now if we wanted to change the right row to be one plot we would change the `ax2` spec to point to 1:0 (bottom left) and us the right side for the plot.  The difference from the previous plot being where `ax1` and `ax2` are instantiated.
 
@@ -462,7 +462,7 @@ ax2 = fig.add_subplot(spec[1, 0])
 ax3 = fig.add_subplot(spec[:, 1])
 ```
 
-![fig_19](./data/figures/figure_19.png/)
+![fig_19](./data/figures_1/figure_19.png)
 
 Note at how we are using the colon to select the entire row or column.  If you had a 5x5 grid or some other large size you may want to only select rows one and two to be a large plot in the middle as we will show here.
 
@@ -485,7 +485,7 @@ mid_ax = fig.add_subplot(spec[1:3, :])
 mid_ax.plot(X, y, color='C1')
 ```
 
-![fig_20](./data/figures/figure_20.png/)
+![fig_20](./data/figures_1/figure_20.png)
 
 ### Iteratively Creating a Grid
 
@@ -511,7 +511,7 @@ ax = fig.add_subplot(gs[bottom_indice, :])
 ax.plot(X, y, color='C3')
 ```
 
-![fig_21](./data/figures/figure_21.png/)
+![fig_21](./data/figures_1/figure_21.png)
 
 This works the same way if you have more than two columns as well.
 
@@ -536,7 +536,7 @@ ax = fig.add_subplot(gs[bottom_indice, :])
 ax.plot(X, y, color='C3')
 ```
 
-![fig_22](./data/figures/figure_22.png/)
+![fig_22](./data/figures_1/figure_22.png)
 
 ## Labeling
 
@@ -549,7 +549,7 @@ plt.scatter(x='fare', y='age', data=df)
 plt.title("This is a title")
 ```
 
-![fig_23](./data/figures/figure_23.png/)
+![fig_23](./data/figures_1/figure_23.png)
 
 Note that the methods for changing labels on an axis are different for example: `plt.title()` vs `ax.set_title()`.  I recommend becoming familiar with the axis labeling techniques as those will be used more often, and can be used for any plot, vs the `plt` commands can only be used with a single subplot.
 
@@ -562,7 +562,7 @@ ax.scatter(x='fare', y='age', data=df)
 ax.set_title("This is a title")
 ```
 
-![fig_24](./data/figures/figure_24.png/)
+![fig_24](./data/figures_1/figure_24.png)
 
 There are also default parameters you can set found [Here in the documentation](https://matplotlib.org/3.3.3/tutorials/introductory/customizing.html)
 
@@ -578,7 +578,7 @@ ax.set_xlabel("Fare")
 ax.set_ylabel("age")
 ```
 
-![fig_25](./data/figures/figure_25.png/)
+![fig_25](./data/figures_1/figure_25.png)
 
 Now if we wanted to plot multiple datasets on one plot we may want to have a legend.  We do this by calling `ax.legend()` and setting the labels for each axis as we plot.  We'll start by splitting out whether or not someone survived, and then after that plot each of the survived and died datasets.
 
@@ -602,6 +602,6 @@ ax.scatter(x='fare', y='pclass', data=died_df, label='died',
 ax.legend()
 ```
 
-![fig_26](./data/figures/figure_26.png/)
+![fig_26](./data/figures_1/figure_26.png)
 
 There is much more to matplotlib that you can find in the [Documentation](https://matplotlib.org/3.3.3/). I also recommend checking out [seaborn](https://seaborn.pydata.org/).  Let me know on [linkedin](https://www.linkedin.com/in/samuel-stoltenberg-0b799bb5/) if you want any specific blog posts or have questions about a post!
