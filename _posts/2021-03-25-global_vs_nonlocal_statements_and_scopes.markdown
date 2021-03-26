@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "global vs nonlocal statements and scopes"
-date:       2020-08-08 01:21:54 -0400
+date:       2020-03-25 06:00:00 -0000
 permalink:  global_vs_nonlocal_statements_and_scopes
 ---
 
