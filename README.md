@@ -30,5 +30,9 @@ Visit Clean Blog's template overview page on Start Bootstrap at http://startboot
 
 sudo apt-get install jekyll
 
+sudo apt-get install ruby-dev
+
+bundle install
+
 bundle exec jekyll serve --watch
 ```

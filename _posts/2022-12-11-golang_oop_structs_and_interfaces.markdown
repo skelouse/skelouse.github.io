@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Golang OOP, structs, and interfaces"
-date:       2020-03-25 06:00:00 -0000
+date:       2022-12-11 06:00:00 -0000
 permalink:  golang_oop_structs_and_interfaces
 ---
 
