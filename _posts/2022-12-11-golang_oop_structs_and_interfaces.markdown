@@ -5,7 +5,7 @@ date:       2022-12-11 06:00:00 -0000
 permalink:  golang_oop_structs_and_interfaces
 ---
 
-## Golang OOP, structs, and interfaces
+## Walkthrough
 
 This is a quick walkthrough of structs, interfaces, and some OOP concepts.  Check out the go documentation for a more thorough walkthrough on:
 - [structs](https://go.dev/tour/moretypes/2)
