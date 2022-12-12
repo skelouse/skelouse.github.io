@@ -58,7 +58,7 @@ v.GetX()
 
 
 
-Notice how we got `2` from the above even though we have v.X += 1?  This is because Vertex.GetX() simple has a receiver, not a pointer receiver.  Everything after this point will be pointer receivers.
+Notice how we got `2` from the above even though we have v.X += 1?  This is because Vertex.GetX() has a receiver, not a pointer receiver.  Everything after this point will be pointer receivers.
 
 
 ```go
@@ -90,7 +90,7 @@ There we got 4, because Vertex.X itself was changed.
 ### Interfaces
 
 
-In the last section we created a method of Vertex named `GetX`.  In this section I'll be creating an interface which implements GetX.  After that I'll be type casting the interface back to Vertex so that I can extract X and Y.
+In the last section we created a method of Vertex named `GetX`.  In this section we'll be creating an interface which implements GetX.  After that we'll be type casting the interface back to Vertex so that we can extract X and Y.
 
 
 ```go
@@ -137,11 +137,11 @@ if ok == false {
     Vertex X: 4, Y: 1 
 
 
-That's it, we got our original type out from the interface!  I also checked ok as a best practice as without it the conversion would panic on failure.
+That's it, we got our original type out from the interface!  We also checked ok as a best practice as without it the conversion would panic on failure.
 
 ### OOP
 
-Some would say Golang is not an Object Oriented Programming language.  Here I'm going to show you otherwise with inheritance and method overriding.  I'm going to use the classic OOP animal example.
+Some would say Golang is not an Object Oriented Programming language.  We're going to walk through inheritance and method overriding.  We're going to use the classic OOP animal example.
 
 
 ```go

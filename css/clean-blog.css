@@ -12,9 +12,9 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
-p a {
+/* p a {
   text-decoration: underline;
-}
+} */
 h1,
 h2,
 h3,
@@ -29,6 +29,12 @@ h6.powered_by {
   font-size: 13px;
   margin-top: 0px;
 }
+
+article a {
+  color: #48889c;
+  text-decoration: underline;
+}
+
 a {
   color: #404040;
 }
