@@ -48,11 +48,13 @@ GEM
     public_suffix (5.0.1)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rexml (3.2.5)
+    rexml (3.3.3)
+      strscan
     rouge (3.28.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       listen (~> 3.0)
+    strscan (3.1.0)
     webrick (1.7.0)
 
 PLATFORMS
